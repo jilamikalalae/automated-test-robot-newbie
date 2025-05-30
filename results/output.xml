@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.9.6 on darwin)" generated="2025-05-30T16:04:11.547832" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Newbie" source="/Users/jilamika/QA/robot-newbie">
+<suite id="s1-s1" name="Major" source="/Users/jilamika/QA/robot-newbie/major.robot">
+<test id="s1-s1-t1" name="case #1" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-30T16:04:11.658241" level="INFO">Opening browser 'Safari' to base url 'https://www.majorcineplex.com/home'.</msg>
+<arg>${URL}</arg>
+<arg>Safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-30T16:04:11.657989" elapsed="4.592032"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-30T16:04:16.250950" elapsed="0.021212"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-30T16:04:16.273450" level="INFO">Clicking element '//a[@href="/movie/lilo-stitch"]'.</msg>
+<arg>//a[@href="/movie/lilo-stitch"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T16:04:16.272698" elapsed="0.094325"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-30T16:04:16.368446" level="INFO">Clicking element 'id=view_showtime'.</msg>
+<msg time="2025-05-30T16:04:16.676657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-30T16:04:16.677393" level="FAIL">Element with locator 'id=view_showtime' not found.</msg>
+<arg>id=view_showtime</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-30T16:04:16.367708" elapsed="0.317632">Element with locator 'id=view_showtime' not found.</status>
+</kw>
+<status status="FAIL" start="2025-05-30T16:04:11.657372" elapsed="5.028378">Element with locator 'id=view_showtime' not found.</status>
+</test>
+<status status="FAIL" start="2025-05-30T16:04:11.560260" elapsed="5.126088"/>
+</suite>
+<status status="FAIL" start="2025-05-30T16:04:11.550049" elapsed="5.137149"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot-Newbie" id="s1" pass="0" fail="1" skip="0">Robot-Newbie</stat>
+<stat name="Major" id="s1-s1" pass="0" fail="1" skip="0">Robot-Newbie.Major</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
